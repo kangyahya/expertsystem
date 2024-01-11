@@ -1,0 +1,170 @@
+{
+  "expert" : [
+    {
+      "menu": [
+        {
+          "menuHeader": "Data Master"
+        },
+        {
+          "url": "data-species",
+          "icon": "menu-icon tf-icons mdi mdi-fish",
+          "name": "Data Species",
+          "slug": "data-species.index"
+        },
+        {
+          "url": "data-ikan",
+          "icon": "menu-icon tf-icons mdi mdi-fish",
+          "name": "Data Ikan",
+          "slug": "data-ikan.index"
+        },
+        {
+          "url": "data-penyakit",
+          "icon": "menu-icon tf-icons mdi mdi-emoticon-sick",
+          "name": "Data Penyakit",
+          "slug": "data-penyakit.index"
+        },
+        {
+          "url": "data-gejala",
+          "icon": "menu-icon tf-icons mdi mdi-book",
+          "name": "Data Gejala",
+          "slug": "data-gejala.index"
+        },
+        {
+          "url": "data-aturan",
+          "icon": "menu-icon tf-icons mdi mdi-clipboard-text",
+          "name": "Data Aturan",
+          "slug": "data-aturan.index"
+        },
+        {
+          "menuHeader": "Laporan"
+        },
+        {
+          "url": "laporan",
+          "icon": "menu-icon tf-icons mdi mdi-book-open",
+          "name": "Hasil Diagnosa",
+          "slug": "laporan.index"
+        }
+      ]
+    }
+  ],
+  "staff" : [
+    {
+      "menu": [
+        {
+          "url": "formulir",
+          "icon": "menu-icon tf-icons mdi mdi-book",
+          "name": "Formulir",
+          "slug": "formulir.index"
+        },
+        {
+          "url": "diagnosa",
+          "icon": "menu-icon tf-icons mdi mdi-book",
+          "name": "Diagnosa",
+          "slug": "diagnosa.index"
+        }
+      ]
+    }
+  ],
+  "super" : [
+    {
+      "menu": [
+        {
+          "menuHeader": "Super Admin Only"
+        },
+        {
+          "url": "users",
+          "icon": "menu-icon tf-icons mdi mdi-account",
+          "name": "Data Users",
+          "slug": "users.index"
+        },
+        {
+          "menuHeader": "Expert Only"
+        },
+        {
+          "url": "data-species",
+          "icon": "menu-icon tf-icons mdi mdi-fish",
+          "name": "Data Species",
+          "slug": "data-species.index"
+        },
+        {
+          "url": "data-ikan",
+          "icon": "menu-icon tf-icons mdi mdi-fish",
+          "name": "Data Ikan",
+          "slug": "data-ikan.index"
+        },
+        {
+          "url": "data-penyakit",
+          "icon": "menu-icon tf-icons mdi mdi-emoticon-sick",
+          "name": "Data Penyakit",
+          "slug": "data-penyakit.index"
+        },
+        {
+          "url": "data-gejala",
+          "icon": "menu-icon tf-icons mdi mdi-book",
+          "name": "Data Gejala",
+          "slug": "data-gejala.index"
+        },
+        {
+          "url": "data-aturan",
+          "icon": "menu-icon tf-icons mdi mdi-clipboard-text",
+          "name": "Data Aturan",
+          "slug": "data-aturan.index"
+        },
+        {
+          "url": "laporan",
+          "icon": "menu-icon tf-icons mdi mdi-book-open",
+          "name": "Hasil Diagnosa",
+          "slug": "laporan.index"
+        },
+        {
+          "url": "trash",
+          "icon": "menu-icon tf-icons mdi mdi-book-open",
+          "name": "Sampah",
+          "slug": "trash.index",
+          "submenu": [
+            {
+              "url": "trash/data-species",
+              "name": "Data Species",
+              "slug": "trash.data-species.index"
+            },
+            {
+              "url": "trash/data-ikan",
+              "name": "Data Ikan",
+              "slug": "trash.data-ikan.index"
+            },
+            {
+              "url": "trash/data-penyakit",
+              "name": "Data Penyakit",
+              "slug": "trash.data-penyakit.index"
+            },
+            {
+              "url": "trash/data-gejala",
+              "name": "Data Gejala",
+              "slug": "trash.data-gejala.index"
+            },
+            {
+              "url": "trash/data-aturan",
+              "name": "Data Aturan",
+              "slug": "trash.data-aturan.index"
+            }
+          ]
+        },
+        {
+          "menuHeader": "Staff Only"
+        },
+        {
+          "url": "formulir",
+          "icon": "menu-icon tf-icons mdi mdi-book",
+          "name": "Formulir",
+          "slug": "formulir.index"
+        },
+        {
+          "url": "diagnosa",
+          "icon": "menu-icon tf-icons mdi mdi-book",
+          "name": "Diagnosa",
+          "slug": "diagnosa.index"
+        }
+      ]
+    }
+  ]
+}
