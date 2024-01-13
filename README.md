@@ -74,12 +74,6 @@ At present, we officially aim to support the last two versions of the following 
 - Microsoft Edge (latest)
 - Opera (latest)
 
-## Useful Links 🎁
-
-- [Freebies](https://themeselection.com/item/category/freebies/)
-- [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
-- [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
-
 ## License ©
 
 - Copyright © Moh. Yahya
