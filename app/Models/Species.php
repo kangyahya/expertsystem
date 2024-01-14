@@ -14,6 +14,6 @@ class Species extends Model
     use HasFactory;
     use SoftDeletes;
     protected $table = 'species';
-    protected $fillable = ['species_name','deleted_at'];
+    protected $fillable = ['species_name','quantity','deleted_at'];
     protected $guarded = [];
 }

@@ -40,6 +40,7 @@ class SpeciesController extends Controller
       ]);
       Species::create([
         'species_name' => $request->species_name,
+        'quantity' => 0
       ]);
       toast('Your Species as been submitted','success');
       return back();
