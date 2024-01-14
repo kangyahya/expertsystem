@@ -17,7 +17,7 @@ class PenyakitController extends Controller
   }
     public function index()
     {
-      $diseases = Penyakit::paginate(10);
+      $diseases = Penyakit::all();
         return view('content.penyakit.penyakit', compact('diseases'));
     }
     /**
