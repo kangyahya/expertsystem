@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('disease_code');
             $table->string('disease_name');
-            $table->string('reason')->nullable();
+            $table->text('reason')->nullable();
             $table->string('picture')->nullable();
-            $table->string('information')->nullable();
-            $table->string('solution')->nullable();
+            $table->text('information')->nullable();
+            $table->text('solution')->nullable();
             $table->timestamps();
         });
     }
