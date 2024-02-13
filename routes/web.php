@@ -12,16 +12,19 @@ use App\Http\Controllers\LaporanController as Laporan;
 use App\Http\Controllers\FormulirController as Formulir;
 use App\Http\Controllers\DiagnosaController as Diagnosa;
 use App\Http\Controllers\UsersController as Users;
-
+use App\Http\Controllers\HomeC as Home;
 Route::get('/', [LoginBasic::class,'login']);
 Route::group(['middleware' => 'auth'],function (){
+    
+  Route::get('/home', [Home::class, 'index'])->name('home');
+    
     Route::resource('/users', Users::class);
     Route::get('/data-pakar',[Pakar::class,'index'])->name('data-pakar');
     Route::resource('/data-species', Specie::class);
     Route::get('trash/data-species',[Specie::class,'trash'])->name('trash.data-species.index');
     Route::patch('data-species/restore/{id}',[Specie::class,'restore'])->name('trash.data-species.restore');
     Route::delete('data-species/force-delete/{id}',[Specie::class,'forceDelete'])->name('trash.data-species.force');
-
+    
     Route::resource('/data-ikan', Ikan::class);
     Route::get('trash/data-ikan',[Ikan::class,'trash'])->name('trash.data-ikan.index');
     Route::patch('data-ikan/restore/{id}',[Ikan::class,'restore'])->name('trash.data-ikan.restore');
