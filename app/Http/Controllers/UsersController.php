@@ -8,6 +8,7 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Facades\Hash;
 
 class UsersController extends Controller
 {
@@ -35,15 +36,19 @@ class UsersController extends Controller
   public function store(Request $request): RedirectResponse
   {
     $this->validate($request, [
-      'symptom_code' => 'required',
-      'symptom_name' => 'required'
+      'name' => 'required',
+      'email' => 'required',
+      'password' => 'required',
+      'role' => 'required'
     ]);
     User::create([
-      'symptom_code' => $request->symptom_code,
-      'symptom_name' => $request->symptom_name
+      'name' => $request->name,
+      'email' => $request->email,
+      'password' => Hash::make($request->password),
+      'role' => $request->role
     ]);
     Alert::success('Hore!', 'Data Berhasil disimpan!');
-    return redirect()->route('data-gejala.index');
+    return redirect()->route('users.index');
   }
 
   /**

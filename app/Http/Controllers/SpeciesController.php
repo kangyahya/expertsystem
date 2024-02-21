@@ -49,12 +49,10 @@ class SpeciesController extends Controller
     {
       $this->validate($request, [
         'species_name' => 'required',
-        'species_qty' => 'numeric'
       ]);
       $species = Species::findOrFail($id);
       $species->update([
         'species_name' => $request->species_name,
-        'quantity' => $request->species_qty
       ]);
       toast('Your Species as been updatted','success');
       return back();
