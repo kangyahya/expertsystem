@@ -58,12 +58,19 @@ class UsersController extends Controller
   public function update(Request $request, $id): RedirectResponse
   {
     $this->validate($request, [
-      'symptom_code' => 'required',
-      'symptom_name' => 'required'
+      'name' => 'required',
+      'role' => 'required'
     ]);
-    $symptom = User::findOrFail($id);
-    $symptom->update(['symptom_code'=>$request->symptom_code,'symptom_name'=> $request->symptom_name]);
-    return redirect()->route('data-gejala.index')->with(['success'=> 'Data Berhasil Diubah']);
+    $user = User::findOrFail($id);
+    $query = $user->update(
+      [
+        'name' => $request->name,
+        'role' => $request->role,
+      ]);
+      if ($query) {
+        Alert::success('Hore!', 'Data Berhasil diubah!');
+      }
+    return redirect()->route('users.index');
   }
 
   /**
