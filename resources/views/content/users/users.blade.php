@@ -33,7 +33,7 @@
           <td>
             @if($user->role != 'super')
               <a class="btn btn-info" href="#editUsers{{$user->id}}" data-bs-toggle="modal"><i class="mdi mdi-pencil-outline me-1"></i></a>
-              <a class="btn btn-danger" href="#hapusUsers{{$user->id}}"data-bs-toggle="modal"><i class="mdi mdi-trash-can-outline me-1"></i></a>
+              <a class="btn btn-danger" href="#hapusUser{{$user->id}}"data-bs-toggle="modal"><i class="mdi mdi-trash-can-outline me-1"></i></a>
             @else
               <a class="btn btn-outline-info" href="#" data-bs-toggle="modal"><i class="mdi mdi-pencil-outline me-1"></i></a>
               <a class="btn btn-outline-danger" href="#" data-bs-toggle="modal"><i class="mdi mdi-trash-can-outline me-1"></i></a>
@@ -93,7 +93,7 @@
         </div>
       </form>
     </div>
-    <!-- <div class="modal fade" id="hapusUser{{$user->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="hapusUser{{$user->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <form method="post" action="{{route('users.destroy', $user->id)}}">
         @method('DELETE')
         @csrf
@@ -116,7 +116,7 @@
           </div>
         </div>
       </form>
-    </div> -->
+    </div>
   @endforeach
 <!--/ Basic Bootstrap Table -->
 @endsection

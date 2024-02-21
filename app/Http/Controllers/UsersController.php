@@ -78,8 +78,8 @@ class UsersController extends Controller
    */
   public function destroy($id)
   {
-    $symptom = Gejala::findOrFail($id);
-    $symptom->delete();
+    $user = User::findOrFail($id);
+    $user->delete();
     Alert::success('Hore!', 'Data Berhasil dihapus');
     return back();
   }
